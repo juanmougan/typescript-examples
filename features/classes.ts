@@ -1,9 +1,6 @@
 class Vehicle {
-  color: string;
-
-  constructor(color: string) {
-    this.color = color;
-  }
+  // Using 'public' saves us to declare 'color' as a property
+  constructor(public color: string) {}
 
   // all public by default
   protected drive(): void {
